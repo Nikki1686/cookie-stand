@@ -188,6 +188,7 @@ capHill.renderHours = function () {
     console.log(headerEl);
     headerEl.textContent = this.name;
     storesContainer.appendChild(headerEl);
+    //create Ul
     var ulEl = document.createElement('ul');
     console.log(this.cookiesSoldEachHour);
     for (var i = 0; i < this.cookiesSoldEachHour.length; i++) {

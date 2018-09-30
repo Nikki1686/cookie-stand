@@ -1,5 +1,71 @@
 'use strict'
 
+//Constructors for stores
+
+var Store = function(name, minCustomersperHour, maxCustomersPerHour, averageCookiesSoldPerCustomer){
+    this.name = name;
+    this.min = minCustomersperHour;
+    this.max = maxCustomersPerHour;
+    this.avgCookiesPerSale = averageCookiesSoldPerCustomer;
+    this.cookiesSoldEachHour = [];
+    this.customersPerHour = [];
+    this.totalCookies = [];
+};
+Store.prototype.calculateCustomersPerHour = function() {
+    var randomAmount = Math.floor(Math.random() * (this.max - this.min + 1) + this.min);
+    return Math.round(randomAmount * this.avgCookiesPerSale);
+};
+var pikePlace = new Store('1st and Pike', 23, 65, 6.3);
+console.log(pikePlace);
+var seaTac = new Store('SeaTac Airport', 3, 24, 1.2);
+var seattleCenter = new Store('Seattle Center', 11, 38, 3.7);
+var capitolHill = new Store('Capitol Hill', 20, 38, 2.3);
+var alki = new Store('Alki', 2, 16, 4.6);
+Store.prototype.calculateCookiesSoldEachHour = function(){
+  console.log(this);
+  for(var i = 0; i < 15; i++){
+    this.cookiesSoldEachHour.push(this.calculateCustomersPerHour());
+  }
+};
+
+Store.prototype.renderHours = function(){
+  this.calculateCookiesSoldEachHour();
+
+  var storesContainer = document.getElementById('stores');
+  // console.log(storesContainer);
+  var headerEl = document.createElement('h2');
+  // console.log(headerEl);
+  headerEl.textContent = this.name;
+  storesContainer.appendChild(headerEl);
+
+  var ulEl = document.createElement('ul'); //create an element
+  console.log(this.cookiesSoldEachHour);
+
+  for(var i in this.cookiesSoldEachHour){ 
+    var listItemEl = document.createElement('li');
+
+    // console.log(listItemEl);
+    listItemEl.textContent = this.cookiesSoldEachHour[i];
+    ulEl.appendChild(listItemEl);
+  }
+ // listItemEl =document
+
+  //append the ul
+  storesContainer.appendChild(ulEl);
+};
+pikePlace.renderHours();
+seaTac.renderHours();
+seattleCenter.renderHours();
+capitolHill.renderHours();
+alki.renderHours();
+
+// pikePlace.calculateCookiesSoldEachHour();
+
+
+
+
+
+/*
 var pikePlace = {
     name: 'First and Pike',
     min: 23,
@@ -261,4 +327,4 @@ alki.renderHours = function () {
 alki.renderHours();
 
 
-
+*/

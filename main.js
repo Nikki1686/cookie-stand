@@ -29,18 +29,16 @@ Store.prototype.calculateCookiesSoldEachHour = function(){
   }
 };
 
-
 Store.prototype.renderHours = function(){
   this.calculateCookiesSoldEachHour();
 
   var storesContainer = document.getElementById('stores');
-  // console.log(storesContainer);
   var headerEl = document.createElement('th');
-  // console.log(headerEl);
   headerEl.textContent = this.name;
   storesContainer.appendChild(headerEl);
 
-  var ulEl = document.createElement('tr'); //create an element
+  //creates an element
+  var ulEl = document.createElement('tr'); 
   console.log(this.cookiesSoldEachHour);
 
   var totalCookies = 0;
@@ -56,7 +54,6 @@ Store.prototype.renderHours = function(){
     totalContainer.textContent = `Total Cookies: ${totalCookies}`;
     ulEl.appendChild(totalContainer);
 
- 
   //append the ul
   storesContainer.appendChild(ulEl);
 };

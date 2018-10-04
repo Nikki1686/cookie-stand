@@ -1,8 +1,15 @@
+
+body {
+    background-image: url("https://pixabay.com/get/e834b6062ef4003ed1584d05fb0938c9bd22ffd41cb2194496f4c47fa0/background-1179601_1280.jpg");
+    
+}
 h1 {
     text-align: center;
-
+    font-weight: 64px;
 }
 #stores {
-    border: black;
+
+    border: rgb(18, 104, 71) outset  10px;
+    
 }
 

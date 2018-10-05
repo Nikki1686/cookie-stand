@@ -1,14 +1,17 @@
 
 body {
-    background-image: url("https://pixabay.com/get/e834b6062ef4003ed1584d05fb0938c9bd22ffd41cb2194496f4c47fa0/background-1179601_1280.jpg");
-    
+    background-image: url("https://pixabay.com/get/eb3db6062cf5083ed1534705fb0938c9bd22ffd41cb2194797f5c371a2/knife-2879419_1920.jpg");
+
 }
 h1 {
     text-align: center;
-    font-weight: 64px;
+    font-weight: 76px;
+}
+img {
+    float:right;
 }
 #stores {
-
+    float: right;
     border: rgb(18, 104, 71) outset  10px;
     
 }

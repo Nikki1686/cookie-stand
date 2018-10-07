@@ -1,0 +1,25 @@
+body {
+    background-image: url("img/paper-3265721_1920.jpg");
+}
+h1 {
+    text-align: center;
+    font-weight: 76px;
+    font-family: 'Trochut', cursive;
+}
+body #family {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+body #ugly {
+    float:left;
+    margin-top: -5%;
+}
+body #cutter {
+    float:right;
+    margin-top: 10%;
+}
+body #frosted {
+    float:left;
+    margin-top: 8%;
+}

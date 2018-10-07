@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,34 +8,46 @@
     <title>Pat's Cookie Stand</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
+
 <body>
-        <a href="index.html">Homepage</a>
-        <h1 id="title">Pat's Salmon Cookie Stand</h1>
-        <img src="https://raw.githubusercontent.com/codefellows/seattle-201n12/master/class-06-dom-objects-domain_modeling/lab/assets/salmon.png"
+    <div id="header">
+    <a href="index.html">Homepage</a>
+    <h1 id="title">Pat's Salmon Cookie Stand</h1>
+    <img src="https://raw.githubusercontent.com/codefellows/seattle-201n12/master/class-06-dom-objects-domain_modeling/lab/assets/salmon.png"
         alt="salmon fish" width="540" height="150">
-        
-        <div id = "stores"></div>
-        <form id="store-form">
-            <fieldset>
-                <legend>Store Generator</legend>
-                <div>
-                    <label for="name">Name</label>
-                    <input name="name" type="text"/>
-                </div>
-                <div>
-                    <label for="min-customer">Minimum Customers</label>
-                    <input name="min-customer" type="text"/>
-                </div>
-                <label for="max-customer">Maximum Customers</label>
-                <input name="max-customer" type="text"/>
-                <div>
-                    <label for="avg-cookie">Average Cookie Sales</label>
-                    <input name="avg-cookie" type="text"/>
-                </div>
-                <button type="submit">Add New Store</button>
-            </fieldset>
-        </form>        
-        <script src="main.js"></script>
-    
+        <br>
+    <img id="fish1" src="img/chinook.jpg" alt="ugly fish" height="50" weight="50">
+    <br>
+</div>
+
+<div id="stores"></div>
+<form id="store-form">
+    <fieldset>
+        <legend>Store Generator</legend>
+        <div>
+            <label for="name">Name</label>
+            <input name="name" type="text" />
+        </div>
+        <div>
+            <label for="min-customer">Minimum Customers</label>
+            <input name="min-customer" type="text" />
+        </div>
+        <label for="max-customer">Maximum Customers</label>
+        <input name="max-customer" type="text" />
+        <div>
+            <label for="avg-cookie">Average Cookie Sales</label>
+            <input name="avg-cookie" type="text" />
+        </div>
+        <button type="submit">Add New Store</button>
+    </fieldset>
+</form>
+<div>
+<img id="shirt" src="img/shirt.jpg" alt="shirt with salmon"
+        height="120" weight="220">
+        </div>
+
+    <script src="main.js"></script>
+
 </body>
+
 </html>

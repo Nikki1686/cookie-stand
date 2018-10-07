@@ -1,5 +1,30 @@
+/*
+  var storesContainer = document.getElementById('stores');
+  var headerEl = document.createElement('tr');
+  headerEl.textContent = this.name;
+  storesContainer.appendChild(headerEl);
 
+  //creates an element
+  var ulEl = document.createElement('th'); 
+  console.log(this.cookiesSoldEachHour);
 
+  var totalCookies = 0;
+  for(var i in this.cookiesSoldEachHour){ 
+    var listItemEl = document.createElement('td');
+    listItemEl.textContent = this.cookiesSoldEachHour[i];
+    totalCookies += this.cookiesSoldEachHour[i];
+    ulEl.appendChild(listItemEl);
+  }
+ // listItemEl =document
+
+     var totalContainer = document.createElement('td');
+    totalContainer.textContent = `Total Cookies: ${totalCookies}`;
+    ulEl.appendChild(totalContainer);
+
+  //append the ul
+  storesContainer.appendChild(ulEl);
+};
+*/
 /*
 var pikePlace = {
     name: 'First and Pike',

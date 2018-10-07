@@ -1,3 +1,4 @@
+'use strict'
 var capHill = { 
     name:'First and Pike',
     min: 23,
